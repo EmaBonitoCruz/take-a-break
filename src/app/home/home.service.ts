@@ -9,9 +9,13 @@ import { Joke } from '../models/joke.model';
 })
 export class HomeService {
 
-  private apiUrl:string = environment.apiUrl
+  private apiUrl:string = "";
 
-  constructor(private http:HttpClient) { }
+  constructor(private http:HttpClient) {
+    if(environment && environment.apiUrl){
+      this.apiUrl = environment.apiUrl;
+    }
+  }
 
   getJoke():Observable<Joke>{
     const headers = new HttpHeaders().set('Accept', 'application/json');
