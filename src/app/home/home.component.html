@@ -1,0 +1,65 @@
+<div class="container bg-primary" id="section-1">
+
+  <div class="window">
+    <div class="top-window" >
+        <p>x</p>
+    </div>
+
+    <div class="bottom-window">
+      <div class="bottom-window-1">
+        <h1>Everyone needs a daily dose of good mood</h1>
+        <img src="../../assets/img/blob-1.png" alt="">
+      </div>
+
+      <div class="bottom-window-2">
+        <img src="../../assets/img/blob-2.png" alt="">
+        <h1>Take a break and fill your heart with joy</h1>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="container" id="section-2">
+
+  <div class="text-col-1">
+    <h1>Breathe in...</h1>
+  </div>
+
+  <div class="window">
+    <div class="top-window" >
+      <button (click)="getPhoto(max)">
+        <img src="../../assets/img/reload.png">
+      </button>
+      <p>x</p>
+    </div>
+    <div class="bottom-window">
+      <div class="container-img">
+        <img src="../../assets/img/cute-{{num}}.jpg" alt="cute picture to cheer you up">
+      </div>
+    </div>
+  </div>
+
+  <div class="text-col-2">
+    <h1>...breathe out</h1>
+  </div>
+
+</div>
+
+<div class="container bg-primary" id="section-3">
+  <h1 class="title-secondary">Read a dad joke</h1>
+
+  <div class="window">
+    <div class="top-window">
+      <button (click)="getJoke()">
+        <img src="../../assets/img/reload.png">
+      </button>
+      <p>x</p>
+    </div>
+    <div class="bottom-window">
+      <h1 class="joke">{{joke ? joke.joke : ""}}</h1>
+    </div>
+  </div>
+
+  <h1 class="title-secondary">it might make you blow some air out of your nose</h1>
+</div>

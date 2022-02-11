@@ -1,0 +1,9 @@
+<header>
+
+  <img src="../../assets/img/logo.png" alt="logo break"/>
+
+  <div>
+    <a [ngClass]="{'nav-active': isRoute('/')}" routerLink="">home</a>
+    <a [ngClass]="{'nav-active': hasRoute('manifesto')}" routerLink="manifesto">manifesto</a>
+  </div>
+</header>
